@@ -2565,7 +2565,7 @@ ul {
    FOOTER
    ======================================== */
 .footer {
-    background: url('../assets/images/cielo.jpeg') no-repeat center center;
+    background: url('../assets/images/cielo.webp') no-repeat center center;
     background-size: cover;
     position: relative;
     color: var(--dark-text);
