@@ -547,10 +547,18 @@
                             </svg>
                         </button>
                     </div>
+                    <div class="slider-dots" id="sliderDots">
+                        <button class="dot active" data-slide="0" aria-label="Paso 1"></button>
+                        <button class="dot" data-slide="1" aria-label="Paso 2"></button>
+                        <button class="dot" data-slide="2" aria-label="Paso 3"></button>
+                        <button class="dot" data-slide="3" aria-label="Paso 4"></button>
+                    </div>
 
                     <div class="step-nav-info">
                         <span class="slider-counter" id="currentStepCounter">01</span>
-                        <span class="slider-counter-divider">/</span>
+                        <div class="slider-progress">
+                            <div class="slider-progress-bar" id="stepProgressBar" style="width:25%"></div>
+                        </div>
                         <span class="slider-counter">04</span>
                     </div>
                 </div>
