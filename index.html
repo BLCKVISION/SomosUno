@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SomosUno — Plataforma Integral de Gestión Urbana Inteligente</title>
+    <meta name="description"
+        content="SomosUno centraliza, procesa y analiza datos urbanos para la reconstrucción, planificación y monitoreo de ciudades inteligentes. Respuesta ante crisis y gestión de emergencias en tiempo real.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ========== LOADING SCREEN ========== -->
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <div class="loader-logo-container">
+                <img src="assets/brand/isotipo.svg" alt="SomosUno Isotipo" class="loader-isotipo" style="filter: brightness(0) invert(1);">
+                <span class="loader-brand-text">SomosUno</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== FLOATING CAPSULE NAVBAR ========== -->
+    <header class="navbar-wrapper" id="navbarWrapper">
+        <nav class="navbar" id="navbar">
+            <div class="nav-inner">
+                <a href="#" class="nav-logo">
+                    <img src="assets/brand/isotipo.svg" alt="SomosUno Isotipo" class="logo-icon" width="26" height="26">
+                    <span>SomosUno</span>
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#beneficios">Beneficios</a></li>
+                    <li><a href="#plataforma">Plataforma</a></li>
+                    <li><a href="#impacto">Impacto</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="btn-search" aria-label="Buscar" id="btnSearch">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round">
+                            <circle cx="11" cy="11" r="8" />
+                            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                        </svg>
+                    </button>
+                    <a href="#contacto" class="btn-cta" id="btnCtaNav">
+                        <span class="btn-cta-text">Únete</span>
+                        <span class="btn-cta-arrow">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+                <button class="nav-mobile-toggle" aria-label="Abrir menú" id="mobileToggle">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ========== HERO SECTION (CENTERED LAYOUT LIKE REF 3) ========== -->
+    <section class="hero" id="inicio">
+        <div class="hero-bg">
+            <img class="hero-bg-image" src="assets/images/cielo.jpeg" alt="Cielo de esperanza SomosUno" loading="eager">
+        </div>
+        <div class="hero-content hero-content--centered">
+            <div class="hero-trust-badge" data-gsap="hero">
+                <span class="trust-stars">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#d6fd70" stroke="#d6fd70" stroke-width="2">
+                        <polygon
+                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                        </polygon>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#d6fd70" stroke="#d6fd70" stroke-width="2">
+                        <polygon
+                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                        </polygon>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#d6fd70" stroke="#d6fd70" stroke-width="2">
+                        <polygon
+                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                        </polygon>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#d6fd70" stroke="#d6fd70" stroke-width="2">
+                        <polygon
+                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                        </polygon>
+                    </svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#d6fd70" stroke="#d6fd70" stroke-width="2">
+                        <polygon
+                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                        </polygon>
+                    </svg>
+                </span>
+                <span class="trust-text">Tecnología de vanguardia para la prevención urbana</span>
+            </div>
+
+            <h1 class="hero-title hero-title--centered" data-gsap="hero">
+                <span class="font-light">Juntos hacia un horizonte</span><br>
+                <span class="font-bold">Más claro y seguro</span>
+            </h1>
+            <p class="hero-subtitle hero-subtitle--centered" data-gsap="hero">
+                Plataforma integral de gestión urbana para la <span class="font-medium">reconstrucción y monitoreo
+                    inteligente de ciudades.</span>
+                Centralizamos datos para salvar vidas and prevenir futuras emergencias.
+            </p>
+            <div class="hero-cta-group" data-gsap="hero">
+                <a href="#contacto" class="btn-cta btn-cta--hero">
+                    <span class="btn-cta-text">CONOCER LA PLATAFORMA</span>
+                    <span class="btn-cta-arrow">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Single Glassmorphism Container for Stats -->
+        <div class="hero-stats-glass-container" data-gsap="hero">
+            <div class="hero-stat-item">
+                <div class="hero-stat-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <polyline points="12 6 12 12 16 14" />
+                    </svg>
+                </div>
+                <div class="hero-stat-text">
+                    <span class="hero-stat-value">24/7</span>
+                    <span class="hero-stat-label">Monitoreo en vivo</span>
+                </div>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat-item">
+                <div class="hero-stat-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round">
+                        <path
+                            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                        <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                        <line x1="12" y1="22.08" x2="12" y2="12" />
+                    </svg>
+                </div>
+                <div class="hero-stat-text">
+                    <span class="hero-stat-value">100%</span>
+                    <span class="hero-stat-label">Datos centralizados</span>
+                </div>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat-item">
+                <div class="hero-stat-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round">
+                        <path d="M12 2a10 10 0 1 0 10 10H12V2z" />
+                        <path d="M21.18 8.02c-1-2.3-2.85-4.17-5.16-5.18" />
+                    </svg>
+                </div>
+                <div class="hero-stat-text">
+                    <span class="hero-stat-value">IA</span>
+                    <span class="hero-stat-label">Análisis predictivo</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== BENEFITS SECTION ========== -->
+    <section class="section section--benefits" id="beneficios">
+        <div class="section-container">
+            <div class="section-header-row">
+                <div class="section-tag" data-gsap="fade">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                    </svg>
+                    <span>BENEFICIOS DE<br>LA PLATAFORMA</span>
+                </div>
+                <div class="section-text-block">
+                    <h2 class="section-headline" data-gsap="fade">
+                        <span class="font-light">Centraliza información vital para</span> <span
+                            class="font-bold">reducir tiempos de respuesta</span> y planificar ciudades más resilientes.
+                    </h2>
+                    <p class="section-description" data-gsap="fade">SomosUno es una inversión a largo plazo que
+                        transforma la gestión urbana. Al consolidar datos dispersos en una plataforma única, se mejora
+                        la toma de decisiones, se optimizan recursos y se construyen ciudades preparadas para cualquier
+                        escenario.</p>
+                    <div>
+                        <a href="#contacto" class="btn-outline" data-gsap="fade">
+                            <span class="btn-outline-text">Contáctanos</span>
+                            <span class="btn-outline-arrow">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round">
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <polyline points="12 5 19 12 12 19" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Inline Stats Row -->
+            <div class="stats-inline-row">
+                <div class="stat-inline" data-gsap="stagger-card">
+                    <span class="stat-inline-number" data-count="100">100%</span>
+                    <div class="stat-inline-text">
+                        <span class="stat-inline-label">Datos</span>
+                        <span class="stat-inline-sublabel">centralizados.</span>
+                    </div>
+                </div>
+                <div class="stat-inline" data-gsap="stagger-card">
+                    <span class="stat-inline-number" data-count="70">70%</span>
+                    <div class="stat-inline-text">
+                        <span class="stat-inline-label">Reducción</span>
+                        <span class="stat-inline-sublabel">de tiempo de respuesta.</span>
+                    </div>
+                </div>
+                <div class="stat-inline" data-gsap="stagger-card">
+                    <span class="stat-inline-number">24/7</span>
+                    <div class="stat-inline-text">
+                        <span class="stat-inline-label">Monitoreo</span>
+                        <span class="stat-inline-sublabel">activo en vivo.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== IMPACT / VISION SECTION (75VH LEFT-ALIGNED LAYOUT) ========== -->
+    <section class="section section--vision" id="impacto">
+        <div class="vision-card">
+            <div class="vision-banner-image">
+                <img src="assets/images/Caracas.jpeg" alt="Visión urbana Caracas" loading="lazy">
+            </div>
+            <div class="vision-content-left" data-gsap="fade">
+                <h2 class="vision-banner-title">
+                    <span class="font-light">Gestión urbana inteligente</span><br>
+                    <span class="font-bold">En tus manos</span>
+                </h2>
+                <p class="vision-banner-desc">
+                    Una solución diseñada para centralizar información vital en tiempo real, optimizar la toma de decisiones
+                    y reconstruir ciudades resilientes ante cualquier crisis.
+                </p>
+                <div class="vision-cta-row">
+                    <a href="#contacto" class="btn-cta btn-cta--scrolled-style" data-gsap="fade">
+                        <span class="btn-cta-text">CONOCER MÁS</span>
+                        <span class="btn-cta-arrow">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="vision-content-right">
+                <!-- Empty right column to let Caracas image show through -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== MODULES / FEATURES GRID ========== -->
+    <section class="section section--modules" id="modulos">
+        <div class="section-container">
+            <div class="section-tag" data-gsap="fade">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                </svg>
+                <span>MÓDULOS DE LA PLATAFORMA</span>
+            </div>
+            <h2 class="section-headline" data-gsap="fade">Módulos integrados para la gestión urbana y prevención de
+                crisis.</h2>
+            <div class="modules-grid modules-grid--modern">
+                <!-- Columna Izquierda: Tarjeta Alta (Gestión de Personas) -->
+                <div class="module-card-modern module-card-modern--tall" data-gsap="stagger-card">
+                    <div class="module-card-visual animated-graphic animated-graphic-1">
+                        <div class="mock-card-stack">
+                            <div class="mock-card mock-card-back">
+                                <div style="display:flex;flex-direction:column;">
+                                    <span class="mock-card-back-label">Personas localizadas</span>
+                                    <span class="mock-card-back-number">50+</span>
+                                </div>
+                            </div>
+                            <div class="mock-card mock-card-front">
+                                <div class="mock-kpi-row">
+                                    <span class="mock-kpi-label">Estado de búsqueda</span>
+                                    <span class="mock-kpi-badge">+12%</span>
+                                </div>
+                                <span class="mock-kpi-value">A Salvo</span>
+                                <div class="mock-tag-row">
+                                    <span class="mock-tag">Hospitales</span>
+                                    <span class="mock-tag">Refugios</span>
+                                </div>
+                                <div class="mock-tag-row">
+                                    <span class="mock-tag">Verificados</span>
+                                    <span class="mock-tag">En búsqueda</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Floating user avatars -->
+                        <div class="mock-float-avatar mock-float-avatar-1">
+                            <div class="mock-avatar-circle" style="background:#4ade80;">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff"
+                                    stroke-width="2.5">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </div>
+                            <span>María R.</span>
+                            <span class="mock-avatar-status" style="color:#4ade80;">A Salvo</span>
+                        </div>
+                        <div class="mock-float-avatar mock-float-avatar-2">
+                            <div class="mock-avatar-circle" style="background:#38bdf8;">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff"
+                                    stroke-width="2.5">
+                                    <circle cx="11" cy="11" r="8" />
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                                </svg>
+                            </div>
+                            <span>Carlos M.</span>
+                            <span class="mock-avatar-status" style="color:#38bdf8;">Buscando</span>
+                        </div>
+                    </div>
+                    <div class="module-card-content">
+                        <h3>Gestión de Personas</h3>
+                        <p>Registro y búsqueda de personas "A Salvo" y "Desaparecidas" con algoritmo de búsqueda
+                            inteligente.</p>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Contiene 2 tarjetas pequeñas arriba y 1 tarjeta ancha abajo -->
+                <div class="modules-grid-right">
+                    <!-- Card 2: Centros de Ayuda -->
+                    <div class="module-card-modern" data-gsap="stagger-card">
+                        <div class="module-card-visual animated-graphic animated-graphic-2">
+                            <div class="mock-orbit-system">
+                                <div class="mock-orbit-ring mock-orbit-ring-1"></div>
+                                <div class="mock-orbit-ring mock-orbit-ring-2"></div>
+                                <div class="mock-center-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff"
+                                        stroke-width="2" stroke-linecap="round">
+                                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                                        <polyline points="9 22 9 12 15 12 15 22" />
+                                    </svg>
+                                </div>
+                                <div class="mock-node mock-node-1">
+                                    <span class="mock-node-dot green"></span> Hospital Central
+                                </div>
+                                <div class="mock-node mock-node-2">
+                                    <span class="mock-node-dot blue"></span> Refugio Norte
+                                </div>
+                                <div class="mock-node mock-node-3">
+                                    <span class="mock-node-dot yellow"></span> Acopio Sur
+                                </div>
+                            </div>
+                            <!-- Floating inventory pill -->
+                            <div class="mock-float-pill">
+                                <span class="mock-pill-label">Inventario</span>
+                                <div class="mock-pill-bar">
+                                    <div class="mock-pill-bar-fill" style="width:72%"></div>
+                                </div>
+                                <span class="mock-pill-value">72%</span>
+                            </div>
+                        </div>
+                        <div class="module-card-content">
+                            <h3>Centros de Ayuda</h3>
+                            <p>Ubicación de hospitales, refugios y centros de acopio con estado e inventario
+                                actualizado.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Monitoreo Sísmico -->
+                    <div class="module-card-modern" data-gsap="stagger-card">
+                        <div class="module-card-visual animated-graphic animated-graphic-4">
+                            <div class="mock-seismic">
+                                <div class="mock-seismic-rings">
+                                    <div class="mock-seismic-ring"></div>
+                                    <div class="mock-seismic-ring"></div>
+                                    <div class="mock-seismic-ring"></div>
+                                </div>
+                                <div class="mock-seismic-center">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d6fd70"
+                                        stroke-width="2.5" stroke-linecap="round">
+                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                                    </svg>
+                                </div>
+                                <div class="mock-seismic-data">
+                                    <span class="mock-seismic-label">Magnitud</span>
+                                    <span class="mock-seismic-mag">4.2</span>
+                                    <span class="mock-seismic-loc">Caracas, VE</span>
+                                </div>
+                            </div>
+                            <!-- Floating wave card -->
+                            <div class="mock-float-wave">
+                                <span class="mock-wave-label">USGS en vivo</span>
+                                <svg class="mock-wave-svg" viewBox="0 0 120 40" preserveAspectRatio="none">
+                                    <path class="mock-wave-path"
+                                        d="M0,20 Q10,5 20,20 T40,20 T60,20 T80,20 T100,20 T120,20" fill="none"
+                                        stroke="#d6fd70" stroke-width="2" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="module-card-content">
+                            <h3>Monitoreo Sísmico</h3>
+                            <p>Sincronización en vivo con la API de USGS para reportar sismos cercanos y alertas
+                                tempranas.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Evaluación de Daños (Tarjeta Ancha) -->
+                    <div class="module-card-modern module-card-modern--wide" data-gsap="stagger-card">
+                        <div class="module-card-visual animated-graphic animated-graphic-3">
+                            <div class="mock-doc-scene">
+                                <div class="mock-doc mock-doc-back">
+                                    <div class="mock-doc-line"></div>
+                                    <div class="mock-doc-line w80"></div>
+                                    <div class="mock-doc-line w55"></div>
+                                    <div class="mock-doc-line"></div>
+                                    <div class="mock-doc-line w80"></div>
+                                </div>
+                                <div class="mock-doc mock-doc-front">
+                                    <div class="mock-doc-header">
+                                        <span class="mock-doc-title">Reporte Estructural</span>
+                                        <span class="mock-doc-badge">IA OCR</span>
+                                    </div>
+                                    <div class="mock-doc-line highlight"></div>
+                                    <div class="mock-doc-line w80"></div>
+                                    <div class="mock-doc-line w55"></div>
+                                    <div class="mock-doc-line highlight"></div>
+                                    <div class="mock-doc-line"></div>
+                                    <div class="mock-doc-scan-line"></div>
+                                </div>
+                            </div>
+                            <!-- Floating confidence pill -->
+                            <div class="mock-float-confidence">
+                                <span class="mock-confidence-label">Precisión IA</span>
+                                <span class="mock-confidence-value">98.5%</span>
+                            </div>
+                        </div>
+                        <div class="module-card-content">
+                            <h3>Evaluación de Daños</h3>
+                            <p>Reportes de daños estructurales con IA (OCR) para lectura rápida de planillas y
+                                formularios.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== HOW IT WORKS SECTION (RESTRUCTURED SLIDER) ========== -->
+    <section class="section section--howit" id="como-funciona">
+        <div class="section-container">
+            <div class="howit-header">
+                <div class="section-tag" data-gsap="fade">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                    </svg>
+                    <span>CÓMO FUNCIONA<br>(PASO A PASO)</span>
+                </div>
+                <h2 class="section-headline" data-gsap="fade">Un proceso integrado y eficiente paso a paso.</h2>
+            </div>
+
+            <!-- Restructured Step Slider Wrapper -->
+            <div class="step-slider-wrapper" id="stepSliderWrapper" data-gsap="scale">
+                <div class="step-slider-track" id="stepSliderTrack">
+                    <!-- Step 01 -->
+                    <div class="step-card step-card--slide active" data-index="0">
+                        <div class="step-image">
+                            <img src="assets/images/step-data.png" alt="Recolección de datos" loading="lazy">
+                        </div>
+                        <div class="step-content">
+                            <div class="step-header">
+                                <span class="step-number">01</span>
+                                <h3 class="step-title">RECOLECCIÓN DE DATOS</h3>
+                            </div>
+                            <p class="step-desc">Procesos de ETL que recopilan datos públicos de múltiples fuentes:
+                                personas desaparecidas, hospitales, centros de acopio, edificios afectados y reportes
+                                sísmicos de la USGS. Toda la información se centraliza en una base de datos unificada
+                                con relaciones cruzadas.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 02 -->
+                    <div class="step-card step-card--slide" data-index="1">
+                        <div class="step-image">
+                            <img src="assets/images/step-ai.png" alt="Análisis inteligente" loading="lazy">
+                        </div>
+                        <div class="step-content">
+                            <div class="step-header">
+                                <span class="step-number">02</span>
+                                <h3 class="step-title">ANÁLISIS INTELIGENTE</h3>
+                            </div>
+                            <p class="step-desc">Algoritmos de búsqueda avanzados filtran y cruzan la información.
+                                Minería de datos aplicada a modelos de IA para planificación urbana, rutas de transporte
+                                y planes de contingencia.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 03 -->
+                    <div class="step-card step-card--slide" data-index="2">
+                        <div class="step-image">
+                            <img src="assets/images/step-map.png" alt="Visualización en mapa" loading="lazy">
+                        </div>
+                        <div class="step-content">
+                            <div class="step-header">
+                                <span class="step-number">03</span>
+                                <h3 class="step-title">VISUALIZACIÓN EN MAPA</h3>
+                            </div>
+                            <p class="step-desc">Mapas interactivos con Leaflet y CartoDB muestran afectaciones,
+                                densidades de personas encontradas, hospitales y refugios. Monitoreo en vivo con
+                                contador de usuarios activos.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 04 -->
+                    <div class="step-card step-card--slide" data-index="3">
+                        <div class="step-image">
+                            <img src="assets/images/step-smart.png" alt="Decisiones inteligentes" loading="lazy">
+                        </div>
+                        <div class="step-content">
+                            <div class="step-header">
+                                <span class="step-number">04</span>
+                                <h3 class="step-title">DECISIONES INTELIGENTES</h3>
+                            </div>
+                            <p class="step-desc">La plataforma transforma la gestión urbana: reduce costos, tiempos de
+                                respuesta y mejora la calidad de la planificación. Monitoreo demográfico, social y
+                                comercial para ciudades resilientes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Controls with Chevron Buttons -->
+                <div class="slider-controls-row">
+                    <div class="slider-chevrons">
+                        <button class="btn-chevron" id="btnPrevStep" aria-label="Anterior">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="15 18 9 12 15 6" />
+                            </svg>
+                        </button>
+                        <button class="btn-chevron" id="btnNextStep" aria-label="Siguiente">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="9 18 15 12 9 6" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="slider-dots" id="sliderDots">
+                        <button class="dot active" data-slide="0" aria-label="Paso 1"></button>
+                        <button class="dot" data-slide="1" aria-label="Paso 2"></button>
+                        <button class="dot" data-slide="2" aria-label="Paso 3"></button>
+                        <button class="dot" data-slide="3" aria-label="Paso 4"></button>
+                    </div>
+
+                    <div class="step-nav-info">
+                        <span class="slider-counter" id="currentStepCounter">01</span>
+                        <div class="slider-progress">
+                            <div class="slider-progress-bar" id="stepProgressBar" style="width:25%"></div>
+                        </div>
+                        <span class="slider-counter">04</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PLATFORM SECTION ========== -->
+    <section class="section section--platform" id="plataforma">
+        <div class="section-container">
+            <div class="section-tag" data-gsap="fade">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                </svg>
+                <span>DISEÑADA PARA EL RENDIMIENTO</span>
+            </div>
+            <div class="platform-hero-row">
+                <div class="platform-text">
+                    <h2 class="section-headline" data-gsap="fade">Centraliza datos dispersos y transforma la gestión urbana con inteligencia artificial y análisis predictivo a escala.</h2>
+                    <div>
+                        <a href="#contacto" class="btn-outline" data-gsap="fade">
+                            <span class="btn-outline-text">Conoce más</span>
+                            <span class="btn-outline-arrow">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round">
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                    <polyline points="12 5 19 12 12 19" />
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="platform-image-wrapper" data-gsap="scale">
+                    <div class="platform-image">
+                        <img src="assets/images/platform.png" alt="Centro de control inteligente" loading="lazy">
+                    </div>
+                    <div class="platform-image-quote">
+                        "Innovación y resiliencia en cada dato que procesamos para construir ciudades más seguras."
+                    </div>
+                    <div class="platform-image-nav">
+                        <span class="slider-counter">01</span>
+                        <div class="slider-progress">
+                            <div class="slider-progress-bar" style="width:50%"></div>
+                        </div>
+                        <span class="slider-counter">06</span>
+                    </div>
+                </div>
+            </div>
+            <div class="features-grid">
+                <!-- Card 1 -->
+                <div class="feature-card" data-gsap="stagger-card">
+                    <div class="feature-visual-wrapper visual-map">
+                        <div class="mock-window">
+                            <div class="mock-window-header">
+                                <span class="mock-window-dot red"></span>
+                                <span class="mock-window-dot yellow"></span>
+                                <span class="mock-window-dot green"></span>
+                                <span class="mock-window-title">mapa_crisis.json</span>
+                            </div>
+                            <div class="mock-window-content">
+                                <div class="mock-map-sidebar">
+                                    <div class="sidebar-item active"></div>
+                                    <div class="sidebar-item"></div>
+                                    <div class="sidebar-item"></div>
+                                </div>
+                                <div class="mock-map-grid" style="left: 36px;">
+                                    <div class="mock-map-line vertical" style="left: 20%;"></div>
+                                    <div class="mock-map-line vertical" style="left: 50%;"></div>
+                                    <div class="mock-map-line vertical" style="left: 80%;"></div>
+                                    <div class="mock-map-line horizontal" style="top: 20%;"></div>
+                                    <div class="mock-map-line horizontal" style="top: 50%;"></div>
+                                    <div class="mock-map-line horizontal" style="top: 80%;"></div>
+                                    
+                                    <!-- Animated Route Path -->
+                                    <svg class="mock-map-route" viewBox="0 0 160 120">
+                                        <path d="M 30 70 Q 70 30 110 60" fill="none" stroke="#0ea5e9" stroke-width="2" stroke-dasharray="5 4" class="route-path"></path>
+                                    </svg>
+
+                                    <div class="mock-map-beacon" style="top: 54%; left: 20%;">
+                                        <div class="beacon-pulse"></div>
+                                        <div class="beacon-dot"></div>
+                                    </div>
+                                    <div class="mock-map-beacon red" style="top: 42%; left: 62%;">
+                                        <div class="beacon-pulse red-pulse"></div>
+                                        <div class="beacon-dot red-dot"></div>
+                                    </div>
+
+                                    <div class="mock-map-popover" style="top: 10%; left: 35%;">
+                                        <div class="popover-status">Inundación detectada</div>
+                                        <div class="popover-meta">Zona B • Alta Densidad</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-info-row">
+                        <div class="feature-info-icon icon-blue">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </div>
+                        <div class="feature-info-text">
+                            <h3 class="feature-title">MAPA DE CRISIS</h3>
+                            <p class="feature-desc">Visualización geolocalizada en tiempo real de afectaciones, densidad de
+                                personas encontradas y centros de asistencia activos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="feature-card" data-gsap="stagger-card">
+                    <div class="feature-visual-wrapper visual-tech">
+                        <div class="mock-window">
+                            <div class="mock-window-header">
+                                <span class="mock-window-dot red"></span>
+                                <span class="mock-window-dot yellow"></span>
+                                <span class="mock-window-dot green"></span>
+                                <span class="mock-window-title">consola_sistema.log</span>
+                            </div>
+                            <div class="mock-window-content">
+                                <div class="mock-console-layout">
+                                    <div class="mock-console-left">
+                                        <div class="console-server-node">
+                                            <span class="server-status green"></span>
+                                            <span>US-EAST-1</span>
+                                        </div>
+                                        <div class="console-server-node">
+                                            <span class="server-status green"></span>
+                                            <span>SA-EAST-1</span>
+                                        </div>
+                                        <div class="console-server-node">
+                                            <span class="server-status green"></span>
+                                            <span>EU-CENT-1</span>
+                                        </div>
+                                    </div>
+                                    <div class="mock-console-main">
+                                        <div class="console-row">
+                                            <span class="console-label">Supabase Sync</span>
+                                            <span class="console-badge green">OK</span>
+                                        </div>
+                                        <div class="console-row">
+                                            <span class="console-label">Latency</span>
+                                            <span class="console-value">12ms</span>
+                                        </div>
+                                        <div class="console-row">
+                                            <span class="console-label">Uptime</span>
+                                            <span class="console-value">99.99%</span>
+                                        </div>
+                                        <div class="console-uptime-graph">
+                                            <svg viewBox="0 0 100 20" class="console-graph-svg">
+                                                <path d="M0,15 L15,13 L30,16 L45,6 L60,11 L75,4 L90,14 L100,6" fill="none" stroke="#10b981" stroke-width="1.5"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-info-row">
+                        <div class="feature-info-icon icon-green">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round">
+                                <circle cx="12" cy="12" r="3" />
+                                <path
+                                    d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z" />
+                            </svg>
+                        </div>
+                        <div class="feature-info-text">
+                            <h3 class="feature-title">TECNOLOGÍA CONFIABLE</h3>
+                            <p class="feature-desc">Stack moderno con Angular 18, NestJS, Supabase y Leaflet. Sistemas de
+                                control inteligente para operation estable en condiciones reales de crisis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer" id="contacto">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <img src="assets/brand/isotipo.svg" alt="SomosUno Isotipo" class="logo-icon" width="32"
+                            height="32" style="filter: brightness(0) invert(1);">
+                        <span>SomosUno</span>
+                    </a>
+                    <p class="footer-tagline">Plataforma integral de gestión urbana inteligente. Centralizando datos
+                        para construir ciudades más seguras y resilientes.</p>
+                </div>
+                <div class="footer-links-group">
+                    <div class="footer-col">
+                        <h4>Plataforma</h4>
+                        <ul>
+                            <li><a href="#beneficios">Beneficios</a></li>
+                            <li><a href="#plataforma">Funcionalidades</a></li>
+                            <li><a href="#como-funciona">Cómo Funciona</a></li>
+                            <li><a href="#modulos">Módulos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Proyecto</h4>
+                        <ul>
+                            <li><a href="#impacto">Visión</a></li>
+                            <li><a href="#">Documentación</a></li>
+                            <li><a href="#">API</a></li>
+                            <li><a href="#">Open Source</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contacto</h4>
+                        <ul>
+                            <li><a href="#">info@somosuno.org</a></li>
+                            <li><a href="#">GitHub</a></li>
+                            <li><a href="#">Twitter / X</a></li>
+                            <li><a href="#">Discord</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-cta-row" data-gsap="fade">
+                <div class="footer-cta-text">
+                    <h3>¿Listo para transformarse?</h3>
+                    <p>Únete a la plataforma y sé parte de la reconstrucción inteligente.</p>
+                </div>
+                <a href="#contacto" class="btn-cta btn-cta--scrolled-style" data-gsap="fade">
+                    <span class="btn-cta-text">Comenzar ahora</span>
+                    <span class="btn-cta-arrow">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SomosUno. Todos los derechos reservados.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacidad</a>
+                    <a href="#">Términos</a>
+                    <a href="#">Licencia</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Frosted Glass Bottom Blur Fade -->
+    <div class="bottom-blur-fade"></div>
+
+    <!-- Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.css"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
